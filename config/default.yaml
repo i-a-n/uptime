@@ -3,9 +3,9 @@ url: 'http://localhost:8082'
 mongodb:
   server:   localhost
   database: uptime
-  user:     root 
+  user:     uptime 
   password:
-  connectionString:       # alternative to setting server, database, user and password separately
+  connectionString: mongodb://localhost/uptime      # alternative to setting server, database, user and password separately
 
 monitor:
   name:                   origin
