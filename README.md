@@ -1,6 +1,26 @@
 uptime
 ======
 
+This is my fork of @fzaninotto's "uptime" repo. I'm shrinkwrapping the dependencies, as they've grown far out of date. I'm also nailing down a few bugs that are currently stagnant pull requests in the original "uptime" project.
+
+Here are a list of things you'll need to build this project:
+
++ node
+  + version `0.10.32`
+  + symlinked to `/usr/bin/node` (it's `/usr/bin/nodejs` by default in many OS-managed package distros)
++ npm
+  + version `1.4.28`
++ python
+  + version `2.7.9`
++ make && gcc
+  + I believe any recent versions are fine
+ 
+I'm including a `production` YAML file that serves at a custom domain. I'm also turning on the email plugin in the config file. Everything seems to be locked down and working now.
+
+Here's the original README:
+
+---
+
 A remote monitoring application using Node.js, MongoDB, and Twitter Bootstrap.
 
 <img src="https://raw.github.com/fzaninotto/uptime/downloads/check_details.png" title="Visualizing the availability of an HTTP check in Uptime" width="50%" valign="top" />
